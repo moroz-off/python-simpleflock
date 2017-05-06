@@ -1,5 +1,5 @@
-python-simpleflock
-==================
+python3-filelock
+================
 
 Python module for very simple flock-based file locking.
 
@@ -13,14 +13,14 @@ Features
 Example
 -------
 ```python
-import simpleflock
+import fbfilelock
 
-with simpleflock.SimpleFlock("/tmp/foolock"):
+with fbfilelock.FileLock("/tmp/foolock.txt", 'r', encoding='UTF-8') as f:
    # Do something.
    pass
 
 # Raises an IOError in 3 seconds if unable to acquire the lock.
-with simpleflock.SimpleFlock("/tmp/foolock", timeout = 3):
+with fbfilelock.FileLock("/tmp/foolock.txt", 'r', encoding='UTF-8', timeout=3, delay=0.5) as f:
    # Do something.
    pass
 ```

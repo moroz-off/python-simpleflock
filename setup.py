@@ -3,13 +3,13 @@
 from distutils.core import setup
 
 setup(
-      name = 'simpleflock'
-   ,  version = '0.0.3'
-   ,  description = 'Simple flock-based file locking, using the `with` syntax'
-   ,  author = 'Derp Ston'
-   ,  author_email = 'derpston+pypi@sleepygeek.org'
-   ,  url = 'https://github.com/derpston/python-simpleflock'
-   ,  packages = ['']
-   ,  package_dir = {'': 'src'}
-   )
+      name='fbfilelock',
+      version='0.0.4',
+      description='Flock-based file locking, using the `with` syntax',
+      author='Denis Morozov',  # src_author='Derp Ston',
+      author_email='',  # src_author_email='derpston+pypi@sleepygeek.org',
+      url='https://github.com/moroz-off/python3-filelock',
+      packages=[''],
+      package_dir={'': 'src'}
+)
 
